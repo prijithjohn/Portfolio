@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Prijith J — Java Full Stack Developer. Building scalable web applications, AI-powered solutions, and modern backend systems. Available for Full Stack Developer and Software Engineer roles.">
-<meta name="keywords" content="Java Developer, Full Stack Developer, Spring Boot, React, Backend Engineer, Software Engineer, AI Integration, Chennai">
+<meta name="description" content="Prijith J — Software Engineer specializing in Java, Spring Boot, React, Python, AI-powered applications, backend systems, and CI/CD.">
+<meta name="keywords" content="Software Engineer, Java Developer, Spring Boot, React, Backend Engineer, Full Stack Developer, Python, FastAPI, Django, Docker, GitHub Actions, CI/CD, AI Integration, Chennai">
 <meta name="author" content="Prijith J">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#050608">
-<meta property="og:title" content="Prijith J — Java Full Stack Developer">
-<meta property="og:description" content="Building scalable web applications and AI-powered solutions. Open to Full Stack Developer and Software Engineer roles.">
+<meta property="og:title" content="Prijith J — Software Engineer | Java • Spring Boot • React">
+<meta property="og:description" content="Software Engineer building backend systems, full-stack applications, AI-powered products, and production-oriented software.">
 <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Prijith+J+-+Full+Stack+Developer">
 <meta property="og:url" content="https://prijithj.com">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Prijith J — Java Full Stack Developer">
-<meta name="twitter:description" content="Building scalable web applications and AI-powered solutions.">
+<meta name="twitter:title" content="Prijith J — Software Engineer | Java • Spring Boot • React">
+<meta name="twitter:description" content="Software Engineer building backend systems, full-stack applications, AI-powered products, and production-oriented software.">
 <meta name="twitter:image" content="https://via.placeholder.com/1200x630?text=Prijith+J+-+Full+Stack+Developer">
 <meta name="twitter:creator" content="@prijithjohn">
 <meta property="og:site_name" content="Prijith J Portfolio">
 <meta property="og:locale" content="en_IN">
-<title>Prijith J — Java Full Stack Developer | Spring Boot & React</title>
+<title>Prijith J — Software Engineer | Java • Spring Boot • React</title>
 <link rel="canonical" href="https://prijithj.com">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%2300f5a0'>P</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -914,6 +914,89 @@
   }
   .proj-link:hover { color: var(--accent); border-color: var(--accent); }
 
+  /* RESEARCH */
+  #research { background: var(--bg2); }
+  .research-card {
+    background: var(--surface);
+    border: 1px solid rgba(0,245,160,0.22);
+    border-radius: 16px;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0,245,160,0.06);
+  }
+  .research-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+  }
+  .research-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+  }
+  .research-status {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    border: 1px solid var(--border2);
+    padding: 0.35rem 0.7rem;
+    border-radius: 100px;
+  }
+  .research-card h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    line-height: 1.25;
+    margin-bottom: 0.8rem;
+    color: var(--text);
+  }
+  .research-meta {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    margin-bottom: 1.2rem;
+  }
+  .research-desc {
+    max-width: 900px;
+    color: var(--text2);
+    line-height: 1.75;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  .research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .research-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.3rem;
+    flex-wrap: wrap;
+  }
+  .research-label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.25rem;
+  }
+  .research-value {
+    color: var(--text);
+    font-size: 0.85rem;
+  }
+
   /* CERTIFICATES */
   #certificates { background: var(--bg2); }
   .cert-grid {
@@ -967,6 +1050,8 @@
     align-items: start;
   }
   @media (max-width: 768px) {
+    .research-card { padding: 1.5rem; }
+
     .contact-wrapper {
       grid-template-columns: 1fr;
       gap: 3rem;
@@ -1392,6 +1477,7 @@
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
+  <a href="#research">Research</a>
   <a href="#experience">Experience</a>
   <a href="https://github.com/prijithjohn" target="_blank" rel="noopener noreferrer">GitHub</a>
   <a href="https://leetcode.com/u/Prijith_john/" target="_blank" rel="noopener noreferrer">LeetCode</a>
@@ -1406,13 +1492,13 @@
   <div class="hero-orb hero-orb-1"></div>
   <div class="hero-orb hero-orb-2"></div>
   <div class="hero-content">
-    <div class="hero-tag">✨ Available for opportunities</div>
+    <div class="hero-tag">✨ Open to Software Engineering Opportunities</div>
     <h1 class="hero-name">Prijith<br><span class="accent">J</span></h1>
-    <p class="hero-headline">Java Full Stack Developer × <span class="accent">AI-Powered Applications</span></p>
-    <p class="hero-desc">Computer Science student specializing in Java, Spring Boot, React, and AI-powered applications. Building practical software solutions with a focus on clean architecture and real-world impact.</p>
+    <p class="hero-headline">Software Engineer <span class="accent">| Java • Spring Boot • React</span></p>
+    <p class="hero-desc">Computer Science Engineering graduate building backend systems, full-stack applications, AI-powered products, and production-oriented software with Java, Spring Boot, React, Python, and modern DevOps practices.</p>
     <div class="hero-actions">
         
-      <a href="mailto:prijithjohn07@gmail.com?subject=Opportunity%20Discussion" class="btn-primary">📧 Get in Touch</a>
+      <a href="#projects" class="btn-primary">🚀 View Projects</a>
       <a href="resume/Prijith_J_Resume.pdf"
      target="_blank"
      rel="noopener noreferrer"
@@ -1484,9 +1570,9 @@
   <div class="about-grid">
     <div class="about-text fade-in">
       <h2 class="section-title">Building backends,<br>powering ideas.</h2>
-      <p>I'm a <strong>Computer Science Engineering</strong> student at Sathyabama Institute of Science and Technology, graduating in 2026. I specialize in <strong>Java Full Stack Development</strong> with expertise in backend architecture and scalable systems.</p>
-      <p>I love solving problems through clean, maintainable code. From <strong>AI-powered LinkedIn assistants</strong> to <strong>medical prescription analyzers</strong>, I build real-world applications that make an impact.</p>
-      <p>My mission: combining <strong>Full Stack Development + AI Engineering</strong> to create intelligent, enterprise-grade systems.</p>
+      <p>I'm a <strong>Computer Science Engineering graduate</strong> from Sathyabama Institute of Science and Technology. I specialize in <strong>Java and backend development</strong>, with hands-on experience building full-stack applications and REST APIs.</p>
+      <p>I build practical software with an emphasis on <strong>clean architecture, API design, testing, and deployment</strong>. My projects span AI-powered assistants, enterprise data governance, fintech, and intelligent document analysis.</p>
+      <p>I'm particularly interested in <strong>backend engineering, distributed application workflows, AI integration, and DevOps</strong>—turning ideas into maintainable, deployable software.</p>
       <div class="about-highlights">
         <div class="highlight-item">
           <div class="highlight-icon">🎓</div>
@@ -1505,8 +1591,8 @@
         <div class="highlight-item">
           <div class="highlight-icon">🤖</div>
           <div>
-            <h4>AI-Powered Application Developer</h4>
-            <p>Gemini, Groq AI, OCR, Chrome Extensions</p>
+            <h4>Software & AI Application Developer</h4>
+            <p>Spring Boot, FastAPI, React, Gemini, Groq AI, OCR</p>
           </div>
         </div>
       </div>
@@ -1516,7 +1602,7 @@
         <img src="image/profile.jpeg" alt="Prijith J" loading="lazy">
       </div>
       <h3>Prijith J</h3>
-      <div class="role-badge">// Java Full Stack Developer</div>
+      <div class="role-badge">// Software Engineer</div>
       <div class="about-info-list">
         <div class="about-info-row"><span>📍</span><span>Chennai, Tamil Nadu, India</span></div>
         <div class="about-info-row"><span>📧</span><span>prijithjohn07@gmail.com</span></div>
@@ -1578,95 +1664,113 @@
 
   <div class="skills-container">
 
-    <!-- Backend & Languages -->
     <div class="skill-category fade-in">
       <div class="skill-cat-header">
         <div class="skill-cat-icon">💻</div>
-        <div class="skill-cat-title">Backend & Languages</div>
+        <div class="skill-cat-title">Programming</div>
       </div>
       <div class="skill-tags">
         <span class="skill-tag">Java</span>
-        <span class="skill-tag">Spring Boot</span>
         <span class="skill-tag">Python</span>
         <span class="skill-tag">SQL</span>
-        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">JavaScript</span>
       </div>
     </div>
 
-    <!-- Core Computer Science -->
     <div class="skill-category fade-in">
       <div class="skill-cat-header">
-        <div class="skill-cat-icon">📐</div>
-        <div class="skill-cat-title">Core Computer Science</div>
+        <div class="skill-cat-icon">🧩</div>
+        <div class="skill-cat-title">Software Engineering</div>
       </div>
       <div class="skill-tags">
-        <span class="skill-tag">Data Structures</span>
-        <span class="skill-tag">System Design Basics</span>
-        <span class="skill-tag">Algorithms</span>
-        <span class="skill-tag">DBMS</span>
         <span class="skill-tag">OOP</span>
-        <span class="skill-tag">Operating Systems</span>
-        <span class="skill-tag">Computer Networks</span>
+        <span class="skill-tag">Data Structures & Algorithms</span>
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">API Design</span>
+        <span class="skill-tag">Software Design</span>
+        <span class="skill-tag">SDLC</span>
+        <span class="skill-tag">Agile</span>
       </div>
     </div>
 
-    <!-- Databases & Data -->
     <div class="skill-category fade-in">
       <div class="skill-cat-header">
-        <div class="skill-cat-icon">🗄️</div>
-        <div class="skill-cat-title">Databases & Data</div>
+        <div class="skill-cat-icon">⚙️</div>
+        <div class="skill-cat-title">Backend</div>
       </div>
       <div class="skill-tags">
-        <span class="skill-tag">MySQL</span>
-        <span class="skill-tag">MongoDB</span>
-        <span class="skill-tag">Oracle Database</span>
-        <span class="skill-tag">JPA / Hibernate</span>
+        <span class="skill-tag">Spring Boot</span>
+        <span class="skill-tag">Django</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">JPA</span>
+        <span class="skill-tag">Hibernate</span>
       </div>
     </div>
 
-    <!-- Frontend & Web -->
     <div class="skill-category fade-in">
       <div class="skill-cat-header">
         <div class="skill-cat-icon">🌐</div>
-        <div class="skill-cat-title">Frontend & Web</div>
+        <div class="skill-cat-title">Frontend</div>
       </div>
       <div class="skill-tags">
         <span class="skill-tag">React.js</span>
-        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Streamlit</span>
         <span class="skill-tag">HTML5</span>
         <span class="skill-tag">CSS3</span>
         <span class="skill-tag">Bootstrap</span>
       </div>
     </div>
 
-    <!-- DevOps & Tools -->
+    <div class="skill-category fade-in">
+      <div class="skill-cat-header">
+        <div class="skill-cat-icon">🗄️</div>
+        <div class="skill-cat-title">Databases</div>
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">Redis</span>
+      </div>
+    </div>
+
+    <div class="skill-category fade-in">
+      <div class="skill-cat-header">
+        <div class="skill-cat-icon">🧪</div>
+        <div class="skill-cat-title">Testing & Debugging</div>
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">JUnit</span>
+        <span class="skill-tag">Pytest</span>
+        <span class="skill-tag">Postman</span>
+        <span class="skill-tag">API Testing</span>
+        <span class="skill-tag">Input Validation</span>
+        <span class="skill-tag">Error Handling</span>
+      </div>
+    </div>
+
     <div class="skill-category fade-in">
       <div class="skill-cat-header">
         <div class="skill-cat-icon">🚀</div>
-        <div class="skill-cat-title">DevOps & Tools</div>
+        <div class="skill-cat-title">Version Control & Build</div>
       </div>
       <div class="skill-tags">
         <span class="skill-tag">Git</span>
         <span class="skill-tag">GitHub</span>
         <span class="skill-tag">Maven</span>
-        <span class="skill-tag">Postman</span>
-        <span class="skill-tag">VS Code</span>
       </div>
     </div>
 
-    <!-- AI & Integration -->
     <div class="skill-category fade-in">
       <div class="skill-cat-header">
-        <div class="skill-cat-icon">🤖</div>
-        <div class="skill-cat-title">AI & Integration</div>
+        <div class="skill-cat-icon">☁️</div>
+        <div class="skill-cat-title">DevOps & Deployment</div>
       </div>
       <div class="skill-tags">
-        <span class="skill-tag">Gemini API</span>
-        <span class="skill-tag">Groq AI</span>
-        <span class="skill-tag">OCR</span>
-        <span class="skill-tag">Chrome Extension Development</span>
-       <span class="skill-tag">LLM Integration</span>
-        <span class="skill-tag">Prompt Engineering</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">GitHub Actions</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">CI/CD</span>
       </div>
     </div>
 
@@ -1683,7 +1787,7 @@
       <div class="exp-title">Student Internship Trainee</div>
       <div class="exp-company">ONGC · Chennai, Tamil Nadu</div>
       <ul class="exp-points">
-        <li>Improved data handling efficiency by 25% with PHP web application</li>
+        <li>Built and supported a PHP web application for internal workflows</li>
         <li>Debugged backend workflows and optimized database operations</li>
         <li>Collaborated with senior developers; learned SDLC practices</li>
       </ul>
@@ -1703,216 +1807,244 @@
 <section id="projects">
   <div class="section-label">04 — Projects</div>
   <h2 class="section-title fade-in">Things I've built.</h2>
-  <p class="section-sub fade-in">Real-world applications using modern technologies and clean architecture.</p>
+  <p class="section-sub fade-in">Real-world applications spanning backend engineering, full-stack development, AI, data governance, fintech, and DevOps.</p>
   <div class="projects-grid">
 
     <div class="project-card featured fade-in">
-      <span class="project-badge">✨ Featured</span>
+      <span class="project-badge">✨ Featured • Java • AI</span>
       <div class="project-title">🔗 LinkUp — AI LinkedIn Assistant</div>
-      <div class="project-desc">AI-powered Chrome Extension for LinkedIn. Generates referral requests, recruiter outreach, and connection messages in real-time using Groq AI.</div>
+      <div class="project-desc">Full-stack AI productivity platform for generating personalized LinkedIn networking messages for referrals, recruiter outreach, connection requests, and replies.</div>
       <div class="project-impact">
-        <div class="project-impact-title">💡 Impact</div>
-        <div class="project-impact-text">AI-powered LinkedIn messaging automation</div>
+        <div class="project-impact-title">💡 Engineering Focus</div>
+        <div class="project-impact-text">Java backend • AI integration • browser extension • CI/CD</div>
       </div>
       <ul class="project-highlights">
-        <li>Full-stack AI integration (Java backend + React frontend)</li>
-        <li>Chrome Extension with real-time WebSocket communication</li>
-        <li>Groq AI API for low-latency message generation</li>
+        <li>Java 21 + Spring Boot backend with REST API architecture</li>
+        <li>React + Vite interface with Chrome Extension integration</li>
+        <li>Groq AI integration for personalized message generation</li>
+        <li>Dockerized deployment with Nginx and GitHub Actions CI</li>
       </ul>
       <div class="project-stack">
-        <span class="stack-tag">Java</span>
+        <span class="stack-tag">Java 21</span>
         <span class="stack-tag">Spring Boot</span>
-        <span class="stack-tag">React.js</span>
+        <span class="stack-tag">React</span>
         <span class="stack-tag">Groq AI</span>
-        <span class="stack-tag">WebSocket</span>
-        <span class="stack-tag">Chrome API</span>
+        <span class="stack-tag">Chrome Extension</span>
+        <span class="stack-tag">Docker</span>
+        <span class="stack-tag">GitHub Actions</span>
       </div>
       <div class="project-links">
         <a href="https://github.com/prijithjohn/linkup" target="_blank" rel="noopener noreferrer" class="proj-link">→ GitHub</a>
       </div>
     </div>
 
-      <div class="project-card fade-in">
-      <span class="project-badge">🏗️ Production</span>
-      <div class="project-title">🎟️ EventNexus — Event Booking</div>
-      <div class="project-desc">Scalable SaaS platform for event discovery and booking with optimized APIs and real-time inventory management.</div>
+    <div class="project-card featured fade-in">
+      <span class="project-badge">🛡️ Featured • Enterprise</span>
+      <div class="project-title">🛡️ MetaGuard — Data Governance Platform</div>
+      <div class="project-desc">Enterprise data governance platform for metadata extraction, PII detection, data-quality analysis, risk classification, and automated governance reporting.</div>
       <div class="project-impact">
-        <div class="project-impact-title">💡 Optimization</div>
-        <div class="project-impact-text">Scalable event booking architecture with optimized APIs</div>
+        <div class="project-impact-title">💡 Engineering Focus</div>
+        <div class="project-impact-text">Asynchronous processing • data governance • CI/CD</div>
       </div>
       <ul class="project-highlights">
-        <li>Layered architecture with Spring Boot microservices</li>
-        <li>Optimized MongoDB queries for high-concurrency</li>
+        <li>Asynchronous dataset processing with Celery + Redis</li>
+        <li>PostgreSQL models for metadata, quality reports, and sensitive-data findings</li>
+        <li>PII detection and risk classification workflows</li>
+        <li>Automated PDF governance reports with ReportLab</li>
+        <li>Dockerized deployment with GitHub Actions CI/CD</li>
       </ul>
       <div class="project-stack">
-        <span class="stack-tag">Java</span>
-        <span class="stack-tag">Spring Boot</span>
-        <span class="stack-tag">React.js</span>
-        <span class="stack-tag">MongoDB</span>
+        <span class="stack-tag">Django</span>
+        <span class="stack-tag">PostgreSQL</span>
+        <span class="stack-tag">Celery</span>
+        <span class="stack-tag">Redis</span>
+        <span class="stack-tag">Pandas</span>
+        <span class="stack-tag">Docker</span>
+        <span class="stack-tag">GitHub Actions</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/prijithjohn/eventnexus" target="_blank" rel="noopener noreferrer" class="proj-link">→ GitHub</a>
+        <a href="https://github.com/prijithjohn/Metaguard" target="_blank" rel="noopener noreferrer" class="proj-link">💻 GitHub</a>
+        <a href="https://metaguard-ig1v.onrender.com" target="_blank" rel="noopener noreferrer" class="proj-link primary">🚀 Live Demo</a>
       </div>
     </div>
-
-    <div class="project-card featured fade-in">
-  <span class="project-badge">🛡️ Featured</span>
-
-  <div class="project-title">🛡️ MetaGuard — Data Governance Platform</div>
-
-  <div class="project-desc">
-    Enterprise Data Governance & Risk Intelligence Platform built with Django.
-    Analyzes datasets for data quality, metadata insights, PII detection, and risk classification.
-  </div>
-
-  <div class="project-impact">
-    <div class="project-impact-title">💡 Impact</div>
-    <div class="project-impact-text">
-      Automated dataset governance • Risk classification • PII detection system
-    </div>
-  </div>
-
-  <ul class="project-highlights">
-    <li>Asynchronous processing using Celery + Redis for large dataset analysis</li>
-    <li>Data quality scoring + metadata extraction engine</li>
-    <li>PII detection with risk classification system</li>
-    <li>Auto-generated PDF governance reports (ReportLab)</li>
-  </ul>
-
-  <div class="project-stack">
-    <span class="stack-tag">Django</span>
-    <span class="stack-tag">PostgreSQL</span>
-    <span class="stack-tag">Celery</span>
-    <span class="stack-tag">Redis</span>
-    <span class="stack-tag">Pandas</span>
-    <span class="stack-tag">ReportLab</span>
-    <span class="stack-tag">Bootstrap</span>
-  </div>
-
-  <div class="project-links">
-    <a href="https://github.com/prijithjohn/Metaguard" target="_blank" rel="noopener noreferrer" class="proj-link">
-      💻 GitHub
-    </a>
-
-    <a href="https://metaguard-ig1v.onrender.com" target="_blank" rel="noopener noreferrer" class="proj-link primary">
-      🚀 Live Demo
-    </a>
-  </div>
-</div>
-
-  
 
     <div class="project-card fade-in">
-      <span class="project-badge">🏥 AI/ML</span>
-      <div class="project-title">🧠 MediScan AI — Prescription Analyzer</div>
-      <div class="project-desc">Medical prescription analyzer using OCR and Gemini API for automated text extraction and diagnostic summaries.</div>
+      <span class="project-badge">🏥 AI • Research</span>
+      <div class="project-title">🧠 MediScan — Prescription Intelligence</div>
+      <div class="project-desc">Full-stack AI application for prescription OCR and intelligent medical document analysis, combining OCR, Gemini, structured data processing, and risk-oriented insights.</div>
       <div class="project-impact">
-        <div class="project-impact-title">💡 Healthcare Impact</div>
-        <div class="project-impact-text">40% faster analysis • 92% OCR accuracy • reduced manual effort</div>
+        <div class="project-impact-title">🔬 Research</div>
+        <div class="project-impact-text">IC-ECBE 2026 • Co-authored & Presented</div>
       </div>
       <ul class="project-highlights">
-        <li>Python backend with FastAPI</li>
-        <li>Google Gemini API for intelligent analysis</li>
+        <li>FastAPI backend with PostgreSQL and SQLAlchemy</li>
+        <li>OCR pipeline for extracting information from handwritten prescriptions</li>
+        <li>Gemini-powered summarization, disease and drug insights, and emergency-risk detection</li>
+        <li>JWT authentication, automated testing, Docker, and GitHub Actions</li>
       </ul>
       <div class="project-stack">
         <span class="stack-tag">Python</span>
         <span class="stack-tag">FastAPI</span>
-        <span class="stack-tag">Gemini API</span>
+        <span class="stack-tag">Streamlit</span>
+        <span class="stack-tag">PostgreSQL</span>
+        <span class="stack-tag">Gemini AI</span>
         <span class="stack-tag">OCR</span>
+        <span class="stack-tag">Docker</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/prijithjohn/mediscan" target="_blank" rel="noopener noreferrer" class="proj-link">→ GitHub</a>
+        <a href="https://github.com/prijithjohn/Mediscan" target="_blank" rel="noopener noreferrer" class="proj-link">→ GitHub</a>
+        <a href="#research" class="proj-link">🔬 Research Paper</a>
       </div>
     </div>
 
     <div class="project-card fade-in">
-      <span class="project-badge">✉️ Automation</span>
-      <div class="project-title">✉️ FlowAI — Email Assistant</div>
-      <div class="project-desc">AI-powered email assistant Chrome Extension. Generates professional replies and meeting summaries in Gmail.</div>
-      <div class="project-impact">
-  <div class="project-impact-title">⚡ Productivity Impact</div>
-  <div class="project-impact-text">
-60% faster replies • AI summaries • reduced effort  </div>
-</div>
+      <span class="project-badge">💳 Full Stack • Fintech</span>
+      <div class="project-title">💰 Credora — Finance Dashboard</div>
+      <div class="project-desc">Full-stack fintech dashboard for transaction management, spending analytics, and reward redemption with a layered backend architecture.</div>
       <ul class="project-highlights">
-        <li>Real-time email analysis with Groq AI</li>
-        <li>Seamless Gmail integration</li>
+        <li>Next.js + TypeScript frontend with FastAPI backend</li>
+        <li>Layered service and repository architecture</li>
+        <li>PostgreSQL with SQLAlchemy and Alembic migrations</li>
+        <li>Pydantic validation, pytest testing, and cloud deployment workflow</li>
+      </ul>
+      <div class="project-stack">
+        <span class="stack-tag">Next.js</span>
+        <span class="stack-tag">TypeScript</span>
+        <span class="stack-tag">FastAPI</span>
+        <span class="stack-tag">PostgreSQL</span>
+        <span class="stack-tag">SQLAlchemy</span>
+        <span class="stack-tag">pytest</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/prijithjohn/credora-finance-dashboard" target="_blank" rel="noopener noreferrer" class="proj-link">→ GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <span class="project-badge">✉️ AI • Automation</span>
+      <div class="project-title">✉️ FlowAI — Email Assistant</div>
+      <div class="project-desc">AI-powered email assistant that helps generate professional replies and summarize email content to streamline everyday communication workflows.</div>
+      <div class="project-impact">
+        <div class="project-impact-title">⚡ Productivity</div>
+        <div class="project-impact-text">AI-assisted email drafting and summarization</div>
+      </div>
+      <ul class="project-highlights">
+        <li>Spring Boot backend with React-based interface</li>
+        <li>AI integration for professional email response generation</li>
+        <li>Designed around practical email productivity workflows</li>
       </ul>
       <div class="project-stack">
         <span class="stack-tag">Java</span>
         <span class="stack-tag">Spring Boot</span>
-        <span class="stack-tag">React.js</span>
+        <span class="stack-tag">React</span>
         <span class="stack-tag">Groq AI</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/prijithjohn/email-ai-assistant.git" target="_blank" rel="noopener noreferrer" class="proj-link">→ GitHub</a>
+        <a href="https://github.com/prijithjohn/email-ai-assistant" target="_blank" rel="noopener noreferrer" class="proj-link">→ GitHub</a>
       </div>
     </div>
-<div class="project-card fade-in">
-  <span class="project-badge">🛒 E-Commerce</span>
-
-  <div class="project-title">🛒 Trivian - Django E-Commerce Platform</div>
-
-  <div class="project-desc">
-    Full-stack e-commerce platform built with Django featuring product catalog, cart system, admin management, and Razorpay payment gateway integration.
-  </div>
-
-  <ul class="project-highlights">
-    <li>Razorpay payment gateway integration (test mode)</li>
-  <li>Full e-commerce flow: product, cart, checkout</li>
-  <li>Django admin panel with Jazzmin customization</li>
-  </ul>
-
-  <div class="project-stack">
-    <span class="stack-tag">Python</span>
-    <span class="stack-tag">Django</span>
-    <span class="stack-tag">MySQL</span>
-    <span class="stack-tag">Bootstrap</span>
-    <span class="stack-tag">Razorpay API</span>
-  </div>
-
-  <div class="project-links">
-    <a href="https://github.com/prijithjohn/e_commerce_website_with_python_and_django.git" target="_blank" rel="noopener noreferrer" class="proj-link">
-      → GitHub
-    </a>
-  </div>
-</div>
 
     <div class="project-card fade-in">
-  <span class="project-badge">📊 Full Stack</span>
+      <span class="project-badge">🛒 E-Commerce</span>
+      <div class="project-title">🛒 Trivian — Django E-Commerce Platform</div>
+      <div class="project-desc">Full-stack e-commerce platform built with Django featuring product management, shopping cart, checkout flow, administration, and payment gateway integration.</div>
+      <ul class="project-highlights">
+        <li>Complete product, cart, and checkout workflow</li>
+        <li>Razorpay payment gateway integration in test mode</li>
+        <li>Django admin management with customized administration UI</li>
+      </ul>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Django</span>
+        <span class="stack-tag">MySQL</span>
+        <span class="stack-tag">Bootstrap</span>
+        <span class="stack-tag">Razorpay API</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/prijithjohn/e_commerce_website_with_python_and_django" target="_blank" rel="noopener noreferrer" class="proj-link">→ GitHub</a>
+      </div>
+    </div>
 
-  <div class="project-title">💰 Expense Tracker - MERN Application</div>
+    <div class="project-card fade-in">
+      <span class="project-badge">📊 Full Stack</span>
+      <div class="project-title">💰 Expense Tracker — MERN Application</div>
+      <div class="project-desc">Full-stack expense tracking application for managing income and expenses with secure authentication, transaction management, and financial analytics.</div>
+      <ul class="project-highlights">
+        <li>JWT-based authentication with REST APIs</li>
+        <li>Income and expense tracking backed by MongoDB</li>
+        <li>Interactive dashboard for financial insights</li>
+      </ul>
+      <div class="project-stack">
+        <span class="stack-tag">React.js</span>
+        <span class="stack-tag">Node.js</span>
+        <span class="stack-tag">Express.js</span>
+        <span class="stack-tag">MongoDB</span>
+        <span class="stack-tag">JWT</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/prijithjohn/Expenss-Tracker" target="_blank" rel="noopener noreferrer" class="proj-link">→ GitHub</a>
+      </div>
+    </div>
 
-  <div class="project-desc">
-    Full-stack expense tracking system built using MERN stack with real-time transaction management and financial analytics dashboard.
-  </div>
-
-  <ul class="project-highlights">
-    <li>JWT-based authentication with secure REST APIs</li>
-    <li>Real-time income & expense tracking with MongoDB</li>
-    <li>Interactive dashboard for financial insights</li>
-  </ul>
-
-  <div class="project-stack">
-    <span class="stack-tag">React.js</span>
-    <span class="stack-tag">Node.js</span>
-    <span class="stack-tag">Express.js</span>
-    <span class="stack-tag">MongoDB</span>
-    <span class="stack-tag">JWT Auth</span>
-  </div>
-
-  <div class="project-links">
-    <a href="https://github.com/prijithjohn/Expenss-Tracker.git" target="_blank" rel="noopener noreferrer" class="proj-link">
-      → GitHub
-    </a>
-  </div>
-</div>
+    <div class="project-card fade-in">
+      <span class="project-badge">🚧 In Development</span>
+      <div class="project-title">⚡ NOVA — Active Development</div>
+      <div class="project-desc">An actively developed software platform focused on a modern TypeScript-based architecture, containerized development, automated testing, and documented engineering workflows.</div>
+      <ul class="project-highlights">
+        <li>Monorepo-style application structure</li>
+        <li>Docker Compose development environment</li>
+        <li>Automated testing with Vitest</li>
+        <li>Engineering documentation and maintainable tooling</li>
+      </ul>
+      <div class="project-stack">
+        <span class="stack-tag">TypeScript</span>
+        <span class="stack-tag">Docker</span>
+        <span class="stack-tag">Vitest</span>
+        <span class="stack-tag">ESLint</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/prijithjohn/NOVA" target="_blank" rel="noopener noreferrer" class="proj-link">→ GitHub</a>
+      </div>
+    </div>
 
   </div>
 </section>
 
+
+<section id="research">
+  <div class="section-label">05 — Research</div>
+  <h2 class="section-title fade-in">Research &<br>publications.</h2>
+  <p class="section-sub fade-in">Academic work connecting software engineering, artificial intelligence, and real-world applications.</p>
+
+  <div class="research-card fade-in">
+    <div class="research-card-header">
+      <span class="project-badge">🔬 IC-ECBE 2026</span>
+      <span class="research-status">PRESENTED</span>
+    </div>
+    <h3>MediScan: Doctor Handwriting Recognition with Prescription Summarization, Disease Detection, Drug Insights, and Smart Reminders</h3>
+    <p class="research-meta">K.S.R. College of Engineering × INTI International University · March 2026</p>
+    <p class="research-desc">Co-authored and presented a research paper on an AI-driven prescription analysis system integrating handwriting OCR, medical text summarization, disease identification, drug analysis, emergency-risk detection, and smart reminders.</p>
+
+    <div class="research-tags">
+      <span class="stack-tag">OCR</span>
+      <span class="stack-tag">Medical NLP</span>
+      <span class="stack-tag">Generative AI</span>
+      <span class="stack-tag">Prescription Analysis</span>
+      <span class="stack-tag">Risk Detection</span>
+    </div>
+
+    <div class="research-footer">
+      <div>
+        <div class="research-label">Contribution</div>
+        <div class="research-value">Co-authored & Presented</div>
+      </div>
+      <a href="https://github.com/prijithjohn/Mediscan" target="_blank" rel="noopener noreferrer" class="proj-link">View Project ↗</a>
+    </div>
+  </div>
+</section>
+
 <section id="certificates">
-  <div class="section-label">05 — Certificates</div>
+  <div class="section-label">06 — Certificates</div>
   <h2 class="section-title fade-in">Professional credentials.</h2>
 
   <div class="cert-grid fade-in">
@@ -1953,11 +2085,11 @@
 </section>
 
 <section id="contact">
-  <div class="section-label">06 — Contact</div>
+  <div class="section-label">07 — Contact</div>
   <div class="contact-wrapper">
     <div class="contact-info fade-in">
       <h2>Let's work<br><span>together.</span></h2>
-      <p>I'm open to Full Stack Developer, Backend Engineer, and Software Engineer roles. Let's connect!</p>
+      <p>I'm open to Software Engineer, Java Backend, Full Stack, and DevOps opportunities. Let's connect!</p>
       <div class="contact-links">
         <a href="mailto:prijithjohn07@gmail.com" class="contact-link">
           <div class="contact-link-icon">📧</div>
